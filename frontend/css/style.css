@@ -1,0 +1,117 @@
+
+*{
+    font-family: Montserrat;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    color: #113259;
+}
+
+body{
+    /*Gradient background or something*/
+    background: rgb(221,236,255);
+    background: -moz-linear-gradient(0deg, rgba(180, 219, 225,1) 0%, rgba(239,252,255,1) 45%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(180, 219, 225,1) 0%, rgba(239,252,255,1) 45%, rgba(255,255,255,1) 100%);
+    
+    background: linear-gradient(0deg, rgba(180, 219, 225,1) 0%, rgba(239,252,255,1) 45%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ddecff",endColorstr="#ffffff",GradientType=1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    text-align: center; /*center stuff*/
+    margin:0px; /*Allows for the headerImg to take up the full width of the screen*/
+
+    overflow-y: scroll; 
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(180, 219, 225))
+    
+}
+
+#bigHeaderImg{
+    width: 100vw;
+    position: relative;
+    top:-15vh;
+}
+
+#leaderBoardDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+    top: -10vh;
+}
+
+#leaderBoardDiv > Div{
+    width:50%;
+    height:20%;
+    margin-top: 1rem;
+
+    border-radius: 6px;
+
+    background-color: white;
+    /*Add box shadow*/
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+
+    /*aligns inner elements to go from left to right*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.leaderBoardDivIconDiv{
+    margin-left: 1rem;
+}
+
+.leaderBoardDivTextDiv{
+    padding-left: 1rem;
+}
+
+.leaderBoardEntryHeader{
+    font-size: larger;
+}
+
+.leaderBoardEntryText{
+    font-weight: 200;
+}
+
+
+#leaderBoardDiv img{
+    max-width: 100%;
+    height: auto;
+    width: 3rem;
+}
+
+#logo{
+    position: absolute;
+    left:50%;
+    top:10%;
+    transform: translate(-50%, 0);
+    width:30em;
+    height: auto;
+}
+
+#skyBox{
+    min-height: 70vh;
+    background: rgb(183,214,221);
+    background: linear-gradient(0deg, rgba(183,214,221,1) 0%, rgba(66,92,123,1) 100%);
+}
+
+#starsImg{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100%;
+}
+
+footer{
+    position: relative;
+    bottom:0px;
+    width:100%;
+}
+
+footer img{
+    width: 100%;
+    height: auto;
+}
